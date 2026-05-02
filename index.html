@@ -6,21 +6,29 @@
 <title>KLIXWEAR</title>
 
 <style>
+    /* Reset */
     html, body {
         margin: 0;
         padding: 0;
-        height: 100%;
-        overflow: hidden; /* no scrolling */
     }
 
+    /* Prevent scrolling on all devices */
+    html, body {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /* Mobile-safe full screen */
     body {
         background-image: url("Home.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
 
-        /* Mobile fix: use viewport height instead of 100% */
+        /* This is the mobile fix */
+        min-height: 100vh;
         height: 100vh;
+        max-height: 100vh;
 
         opacity: 0;
         animation: fadeIn 2s ease-in forwards;
@@ -35,4 +43,5 @@
 </head>
 <body>
 </body>
+</html></body>
 </html>
