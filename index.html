@@ -12,28 +12,39 @@
         padding: 0;
     }
 
-    /* Prevent scrolling on all devices */
+    /* Prevent scrolling */
     html, body {
         height: 100%;
         overflow: hidden;
     }
 
-    /* Mobile-safe full screen */
+    /* Banner styling */
     body {
         background-image: url("Home.jpeg");
-        background-size: cover;
-        background-position: center;
+        background-size: cover;          /* full-screen, immersive */
+        background-position: top center; /* recommended: shows more of the people */
         background-repeat: no-repeat;
 
-        /* This is the mobile fix */
+        /* Mobile-safe height */
         min-height: 100vh;
         height: 100vh;
         max-height: 100vh;
 
+        /* Fade-in effect */
         opacity: 0;
         animation: fadeIn 2s ease-in forwards;
     }
 
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+
+</head>
+<body>
+</body>
+</html>
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
