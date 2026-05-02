@@ -21,9 +21,10 @@
     /* Banner styling */
     body {
         background-image: url("Home.jpeg");
-        background-size: cover;          /* full-screen, immersive */
-        background-position: top center; /* recommended: shows more of the people */
-        background-repeat: no-repeat;
+        background-size: contain;        /* fit entire image on any screen */
+        background-position: center;     /* center it perfectly */
+        background-repeat: no-repeat;    /* no tiling */
+        background-color: black;         /* fills empty space cleanly */
 
         /* Mobile-safe height */
         min-height: 100vh;
@@ -35,6 +36,16 @@
         animation: fadeIn 2s ease-in forwards;
     }
 
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+
+</head>
+<body>
+</body>
+</html>
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
